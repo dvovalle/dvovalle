@@ -26,11 +26,11 @@ No meu caso ficou:
 
 /dev/sda1 (500MB para o /boot/efi)
 
-/dev/sda2 (50GB para /)
+/dev/sda2 (500GB para /)
 
 /dev/sda3 (todo o resto para o /home)
 
-/dev/sda4 (2GB para swap)
+/dev/sda4 (16GB para swap)
 
 
 
