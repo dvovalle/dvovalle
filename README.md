@@ -26,22 +26,21 @@ No meu caso ficou:
 
 /dev/sda1 (500MB para o /boot/efi)
 
-/dev/sda2 (500GB para /)
+/dev/sda2 (150GB para /)
 
 /dev/sda3 (todo o resto para o /home)
 
-/dev/sda4 (16GB para swap)
+/dev/sda4 (8GB para swap)
 
 
 
+mkfs.fat -n UEFI -F 32 /dev/sda1
 
-mkfs.fat -F32 /dev/sda1
+mkfs.ext4 -L ROOT /dev/sda2 
 
-mkfs.ext4 /dev/sda2 
+mkfs.ext4 -L HOME /dev/sda3
 
-mkfs.ext4 /dev/sda3
-
-mkswap /dev/sda4 
+mkswap -L SWAP /dev/sda4 
 
 ```
 
@@ -167,15 +166,49 @@ pacman -Sy
 pacman -Syyuu
 pacman -S xorg-server 
 
-pacman -S nvidia nvidia-libgl mesa
+pacman -S nvidia nvidia-utils nvidia-libgl mesa nvidia-settings vulkan-icd-loader
 
 ##GNOME##
 
 pacman -S gdm
 systemctl enable gdm
 
-pacman -S gnome gnome-terminal nautilus gnome-tweaks gnome-control-center gnome-backgrounds adwaita-icon-theme vim curl wget git firefox
+pacman -S gnome gnome-terminal nautilus gnome-tweaks gnome-control-center gnome-backgrounds 
+pacman -S gnome-software-packagekit-plugin
+pacman -S adwaita-icon-theme vim curl wget git firefox
+pacman -S noto-fonts
+pacman -S bluez bluez-utils blueman
+
 
 systemctl enable NetworkManager
+systemctl enable bluetooth
+systemctl start bluetooth
+
+```
+
+## Verificando firmware
+
+```bash
+
+sudo mkinitcpio -P
+
+pacman -S linux-firmware
+git clone https://aur.archlinux.org/wd719x-firmware.git
+git clone https://aur.archlinux.org/aic94xx-firmware.git
+git clone https://aur.archlinux.org/upd72020x-fw.git
+
+```
+
+## VPN
+
+```bash
+# openconnect: VPN COnnect
+pacman -S openconnect
+
+# oath
+pacman -S oath-toolkit
+
+# VPN Slice
+git clone https://aur.archlinux.org/vpn-slice-git.git
 
 ```
