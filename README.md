@@ -95,6 +95,10 @@ Edite /etc/locale.gen e descomente en_US.UTF-8 UTF-8 com qualquer outro locale n
 
 ```bash
 
+# descomente en_US.UTF-8 UTF-8 
+vim /etc/locale.gen
+ 
+
 locale-gen
 
 # Crie o arquivo locale.conf(5) e defina a variável LANG adequadamente:
