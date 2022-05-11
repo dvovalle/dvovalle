@@ -195,6 +195,9 @@ systemctl start bluetooth
 ```bash
 
 sudo mkinitcpio -P
+sudo mkinitcpio -p linux
+
+ sudo pacman -S linux-firmware-qlogic
 
 pacman -S linux-firmware
 git clone https://aur.archlinux.org/wd719x-firmware.git
