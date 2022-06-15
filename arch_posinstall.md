@@ -36,5 +36,13 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> ~/.z
 chsh -s /usr/bin/zsh
 
 # Configurar conforme desejar
-p10k configre
+p10k configure
+
+# Configurar o VIM como editor padrão
+echo "bindkey -v" >> ~/.zshrc
+echo "export EDITOR=/usr/bin/vim" >> ~/.zshrc
+echo "export VISUAL=/usr/bin/vim" >> ~/.zshrc
+
+source ~/.zshrc
+
 ```
