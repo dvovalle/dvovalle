@@ -1,0 +1,5 @@
+du -ahx . | sort -rh | head -5
+
+
+find . -xdev -type f -size +100M -print | xargs ls -lh | sort -k5,5 -h -r | head
+

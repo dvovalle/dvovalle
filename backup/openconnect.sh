@@ -1,0 +1,1 @@
+/home/danilo/vpn/start.sh

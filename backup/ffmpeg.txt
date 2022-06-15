@@ -1,0 +1,7 @@
+ffmpeg $(youtube-dl -g 'https://www.youtube.com/watch?v=ORRx7WaRhbA' | sed 's/.*/-ss 00:00 -i &/') -t 00:02:10 -c copy bailetabela.mp4
+
+
+ffmpeg -i bailetabela.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p  working.mp4
+
+
+youtube-dl -g https://www.youtube.com/watch?v=gIkZnxxhwsY
