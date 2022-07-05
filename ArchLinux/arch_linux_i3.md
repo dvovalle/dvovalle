@@ -17,6 +17,24 @@ timedatectl set-ntp true
 
 ```
 
+## wifi
+
+```bash
+
+$ iwctl
+
+[iwd]# device list
+
+[iwd]# station wlp3s0 scan
+
+[iwd]# station wlp3s0 get-networks
+
+[iwd]# station wlp3s0 connect SSID
+
+$ iwctl --passphrase passphrase station device connect IronVirus2
+
+```
+
 ## Particionado HD
 
 ```bash
@@ -89,7 +107,7 @@ swapon /dev/sda4
 ## Instalação
 
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware linux-header 
 
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
@@ -215,7 +233,7 @@ pacman -S xorg nvidia nvidia-utils nvidia-libgl mesa nvidia-settings vulkan-icd-
 pacman -S curl wget git vim
 pacman -S xorg i3 dmenu lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-dejavu ttf-liberation noto-fonts
 pacman -S firefox nitrogen picom lxappearance pcmanfm material-gtk-theme papirus-icon-theme xfce4-terminal
-pacman -S archlinux-wallpaper
+pacman -S archlinux-wallpaper openconnect oath-toolkit
 
 sudo vim /etc/lightdm/lightdm.conf
 
@@ -224,7 +242,6 @@ display-setup-script=xrandr --output Virtual-1 --mode 1920x1080
 
 systemctl enable lightdm
 
-sudo systemctl rebot
  
 ```
 
@@ -243,6 +260,13 @@ sudo systemctl reboot
 
 ```
 
+## Configuraçoes i3
+
+```bash
+
+setxkbmap ch
+
+```
 
 
 ## Verificando firmware
@@ -251,8 +275,6 @@ sudo systemctl reboot
 
 sudo mkinitcpio -P
 sudo mkinitcpio -p linux
-
- sudo pacman -S linux-firmware-qlogic
 
 pacman -S linux-firmware
 git clone https://aur.archlinux.org/wd719x-firmware.git
