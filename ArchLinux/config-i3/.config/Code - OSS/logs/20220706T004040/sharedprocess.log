@@ -1,0 +1,92 @@
+[2022-07-06 00:40:43.637] [sharedprocess] [info] Starting worker process with pid 34053 (type: fileWatcher, window: 1).
+[2022-07-06 00:40:54.261] [sharedprocess] [info] Getting Manifest... dracula-theme.theme-dracula
+[2022-07-06 00:40:54.518] [sharedprocess] [info] Installing extension: dracula-theme.theme-dracula
+[2022-07-06 00:40:55.920] [sharedprocess] [info] Downloaded extension: dracula-theme.theme-dracula /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/dracula-theme.theme-dracula-2.24.2
+[2022-07-06 00:40:56.026] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.3dbee93a-2d11-49af-841e-1e1c520d25a3: dracula-theme.theme-dracula
+[2022-07-06 00:40:56.030] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/dracula-theme.theme-dracula-2.24.2
+[2022-07-06 00:40:56.031] [sharedprocess] [info] Extracting completed. dracula-theme.theme-dracula
+[2022-07-06 00:40:56.034] [sharedprocess] [info] Extension installed successfully: dracula-theme.theme-dracula
+[2022-07-06 00:41:04.897] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-07-06 00:41:05.118] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-07-06 00:41:05.452] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-07-06 00:41:06.431] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter-renderers
+[2022-07-06 00:41:07.177] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter-keymap
+[2022-07-06 00:41:08.231] [sharedprocess] [info] Getting Manifest... redhat.vscode-yaml
+[2022-07-06 00:41:08.314] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-07-06 00:41:08.315] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-renderers
+[2022-07-06 00:41:08.315] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-keymap
+[2022-07-06 00:41:08.448] [sharedprocess] [info] Installing extension: redhat.vscode-yaml
+[2022-07-06 00:41:09.395] [sharedprocess] [info] Getting Manifest... esbenp.prettier-vscode
+[2022-07-06 00:41:09.618] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2022-07-06 00:41:09.897] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-keymap /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/ms-toolsai.jupyter-keymap-1.0.0
+[2022-07-06 00:41:09.978] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.21aa97fe-eb86-4988-ac97-e0377624bb09: ms-toolsai.jupyter-keymap
+[2022-07-06 00:41:09.983] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-keymap-1.0.0
+[2022-07-06 00:41:09.986] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-keymap
+[2022-07-06 00:41:10.502] [sharedprocess] [info] Downloaded extension: redhat.vscode-yaml /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/redhat.vscode-yaml-1.8.0
+[2022-07-06 00:41:10.564] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.d2643386-8ba0-4a11-80c9-4321f26b9d3a: redhat.vscode-yaml
+[2022-07-06 00:41:10.570] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/redhat.vscode-yaml-1.8.0
+[2022-07-06 00:41:10.572] [sharedprocess] [info] Extracting completed. redhat.vscode-yaml
+[2022-07-06 00:41:10.576] [sharedprocess] [info] Extension installed successfully: redhat.vscode-yaml
+[2022-07-06 00:41:11.158] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-renderers /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/ms-toolsai.jupyter-renderers-1.0.8
+[2022-07-06 00:41:11.465] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.32586556-02b8-4c78-bbce-371f22edb0fd: ms-toolsai.jupyter-renderers
+[2022-07-06 00:41:11.471] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-renderers-1.0.8
+[2022-07-06 00:41:11.473] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-renderers
+[2022-07-06 00:41:12.421] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/esbenp.prettier-vscode-9.5.0
+[2022-07-06 00:41:13.148] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.cd9ea2ce-881d-4ab7-bba1-060049b5b3d7: esbenp.prettier-vscode
+[2022-07-06 00:41:13.153] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/esbenp.prettier-vscode-9.5.0
+[2022-07-06 00:41:13.156] [sharedprocess] [info] Extracting completed. esbenp.prettier-vscode
+[2022-07-06 00:41:13.157] [sharedprocess] [info] Extension installed successfully: esbenp.prettier-vscode
+[2022-07-06 00:41:15.071] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/ms-toolsai.jupyter-2022.5.1001610507
+[2022-07-06 00:41:15.793] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.be3cba8d-b491-4f5e-b8c8-c382742e94b9: ms-toolsai.jupyter
+[2022-07-06 00:41:15.804] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507
+[2022-07-06 00:41:15.820] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-07-06 00:41:18.987] [sharedprocess] [info] Getting Manifest... redhat.vscode-xml
+[2022-07-06 00:41:19.201] [sharedprocess] [info] Installing extension: redhat.vscode-xml
+[2022-07-06 00:41:19.553] [sharedprocess] [info] Downloaded extension: ms-python.python /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/ms-python.python-2022.8.1
+[2022-07-06 00:41:21.854] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.bec3e29a-278c-4452-896a-32238bd26c78: ms-python.python
+[2022-07-06 00:41:21.866] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/ms-python.python-2022.8.1
+[2022-07-06 00:41:21.869] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-07-06 00:41:21.872] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+[2022-07-06 00:41:21.872] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+[2022-07-06 00:41:21.872] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-07-06 00:41:21.873] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-07-06 00:41:24.638] [sharedprocess] [info] Downloaded extension: redhat.vscode-xml /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/redhat.vscode-xml-0.21.0
+[2022-07-06 00:41:24.979] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.c592e071-efa2-49e6-a641-01aaf0452fd0: redhat.vscode-xml
+[2022-07-06 00:41:24.985] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/redhat.vscode-xml-0.21.0
+[2022-07-06 00:41:24.987] [sharedprocess] [info] Extracting completed. redhat.vscode-xml
+[2022-07-06 00:41:24.988] [sharedprocess] [info] Extension installed successfully: redhat.vscode-xml
+[2022-07-06 00:41:35.127] [sharedprocess] [info] Getting Manifest... pkief.material-icon-theme
+[2022-07-06 00:41:35.343] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2022-07-06 00:41:36.401] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/pkief.material-icon-theme-4.19.0
+[2022-07-06 00:41:36.892] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.b914577a-f900-4943-a1ff-1ebbe194253e: pkief.material-icon-theme
+[2022-07-06 00:41:36.897] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/pkief.material-icon-theme-4.19.0
+[2022-07-06 00:41:36.899] [sharedprocess] [info] Extracting completed. pkief.material-icon-theme
+[2022-07-06 00:41:36.900] [sharedprocess] [info] Extension installed successfully: pkief.material-icon-theme
+[2022-07-06 00:41:58.851] [sharedprocess] [info] Getting Manifest... formulahendry.auto-close-tag
+[2022-07-06 00:41:59.073] [sharedprocess] [info] Installing extension: formulahendry.auto-close-tag
+[2022-07-06 00:42:00.198] [sharedprocess] [info] Downloaded extension: formulahendry.auto-close-tag /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/formulahendry.auto-close-tag-0.5.14
+[2022-07-06 00:42:00.219] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.e4c07fa8-570c-4a94-a7b7-ab35f52136f1: formulahendry.auto-close-tag
+[2022-07-06 00:42:00.223] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/formulahendry.auto-close-tag-0.5.14
+[2022-07-06 00:42:00.224] [sharedprocess] [info] Extracting completed. formulahendry.auto-close-tag
+[2022-07-06 00:42:00.224] [sharedprocess] [info] Extension installed successfully: formulahendry.auto-close-tag
+[2022-07-06 00:42:11.530] [sharedprocess] [info] Getting Manifest... vscode-icons-team.vscode-icons
+[2022-07-06 00:42:11.754] [sharedprocess] [info] Installing extension: vscode-icons-team.vscode-icons
+[2022-07-06 00:42:12.953] [sharedprocess] [info] Downloaded extension: vscode-icons-team.vscode-icons /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/vscode-icons-team.vscode-icons-11.12.0
+[2022-07-06 00:42:13.786] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.4510c7eb-79ed-4ad9-b9c1-7da1db650256: vscode-icons-team.vscode-icons
+[2022-07-06 00:42:13.792] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/vscode-icons-team.vscode-icons-11.12.0
+[2022-07-06 00:42:13.794] [sharedprocess] [info] Extracting completed. vscode-icons-team.vscode-icons
+[2022-07-06 00:42:13.795] [sharedprocess] [info] Extension installed successfully: vscode-icons-team.vscode-icons
+[2022-07-06 00:42:23.347] [sharedprocess] [info] Getting Manifest... angular.ng-template
+[2022-07-06 00:42:23.534] [sharedprocess] [info] Installing extension: angular.ng-template
+[2022-07-06 00:42:29.513] [sharedprocess] [info] Getting Manifest... coenraads.bracket-pair-colorizer-2
+[2022-07-06 00:42:29.734] [sharedprocess] [info] Installing extension: coenraads.bracket-pair-colorizer-2
+[2022-07-06 00:42:30.996] [sharedprocess] [info] Downloaded extension: coenraads.bracket-pair-colorizer-2 /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/coenraads.bracket-pair-colorizer-2-0.1.4
+[2022-07-06 00:42:31.063] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.6cbba3ec-6bbe-457f-9f3e-604c1241e7fa: coenraads.bracket-pair-colorizer-2
+[2022-07-06 00:42:31.068] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4
+[2022-07-06 00:42:31.070] [sharedprocess] [info] Extracting completed. coenraads.bracket-pair-colorizer-2
+[2022-07-06 00:42:31.072] [sharedprocess] [info] Extension installed successfully: coenraads.bracket-pair-colorizer-2
+[2022-07-06 00:42:31.301] [sharedprocess] [info] Downloaded extension: angular.ng-template /home/danilo/.config/Code - OSS/CachedExtensionVSIXs/angular.ng-template-14.0.1
+[2022-07-06 00:42:32.511] [sharedprocess] [info] Extracted extension to /home/danilo/.vscode-oss/extensions/.a99ad1d9-4a48-4ded-8bdf-a8629769bc7d: angular.ng-template
+[2022-07-06 00:42:32.520] [sharedprocess] [info] Renamed to /home/danilo/.vscode-oss/extensions/angular.ng-template-14.0.1
+[2022-07-06 00:42:32.521] [sharedprocess] [info] Extracting completed. angular.ng-template
+[2022-07-06 00:42:32.522] [sharedprocess] [info] Extension installed successfully: angular.ng-template

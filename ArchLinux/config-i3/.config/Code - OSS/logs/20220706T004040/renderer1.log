@@ -1,0 +1,24 @@
+[2022-07-06 00:41:21.944] [renderer1] [critical] Extension 'ms-toolsai.jupyter CANNOT USE these API proposals 'notebookControllerKind, notebookWorkspaceEdit, notebookDebugOptions, notebookDeprecated, notebookEditor, notebookEditorDecorationType, notebookMessaging, notebookMime, notebookCellExecutionState, portsAttributes, quickPickSortByLabel'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-07-06 00:41:21.944] [renderer1] [critical] Extension 'ms-python.python CANNOT USE these API proposals 'quickPickSortByLabel, testObserver, notebookEditor'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+[2022-07-06 00:41:23.120] [renderer1] [error] [Extension Host] extension activation failed Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookCellExecutionState.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookCellExecutionState.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at f (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:81:65109)
+	at d.onDidChangeNotebookCellExecutionState (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:97:52642)
+	at new S (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:1231426)
+	at Object.t.resolveInstance (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2866223)
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2868161
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2867079
+	at Array.map (<anonymous>)
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2867051
+	at Array.map (<anonymous>)
+	at Object.t.resolveInstance (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2865997)
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2868161
+	at Object.t.resolve (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2868424)
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2851837
+	at e._get (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2851603)
+	at e.get (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:2850246)
+	at a.get (/home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:1080645)
+	at /home/danilo/.vscode-oss/extensions/ms-toolsai.jupyter-2022.5.1001610507/out/extension.node.js:2:4472358
+	at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-07-06 00:41:25.060] [renderer1] [warning] [redhat.vscode-xml]: Cannot register 'redhat.telemetry.enabled'. This property is already registered.
