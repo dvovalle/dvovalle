@@ -2,6 +2,9 @@
 
 > https://github.com/Airblader/i3
 
+> Teclas de atalho básicas do i3
+- https://elias.praciano.com/2014/08/teclas-de-atalho-do-i3/
+
 
 Resolução do Notebook: 1920x1080 (16:9)
 
@@ -227,13 +230,33 @@ systemctl restart NetworkManager
 
 pacman -Sy
 pacman -Syyuu
+pacman -S linux-header linux-firmware
 pacman -S terminus-font
-pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim curl wget base base-devel linux-header linux-firmware
-pacman -S xorg nvidia nvidia-utils nvidia-libgl mesa nvidia-settings vulkan-icd-loader bluez bluez-utils xdg-utils xdg-user-dirs alsa-utils pulseaudio pulseaudio-bluetooth
+pacman -S dosfstools os-prober mtools network-manager-applet networkmanager 
+pacman -S wpa_supplicant wireless_tools dialog sudo vim base base-devel 
+pacman -S xorg-server xorg-xinit xorg-apps
+pacman -S nvidia nvidia-utils nvidia-libgl mesa nvidia-settings vulkan-icd-loader
+pacman -S bluez bluez-utils xdg-utils xdg-user-dirs alsa-utils 
+pacman -S pulseaudio pulseaudio-bluetooth
 pacman -S curl wget git vim
-pacman -S xorg i3 dmenu lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-dejavu ttf-liberation noto-fonts
-pacman -S firefox nitrogen picom lxappearance pcmanfm material-gtk-theme papirus-icon-theme xfce4-terminal
+pacman -S i3-wm i3status i3blocks i3lock xfce4-terminal rofi fzf arandr xdotool
+pacman -S wmctrl pcmanfm ranger
+pacman -S dmenu lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
+pacman -S ttf-dejavu ttf-liberation noto-fonts
+pacman -S firefox nitrogen picom lxappearance  
+pacman -S material-gtk-theme papirus-icon-theme
 pacman -S archlinux-wallpaper openconnect oath-toolkit
+
+
+# Iniciar o i3 com startx
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+vim ~/.xinitrc
+# comentar  a linha on esta 
+# exec xterm -geometry 80x66+0+0 -name login
+# e incluir 
+exec i3
+
+
 
 sudo vim /etc/lightdm/lightdm.conf
 
@@ -244,6 +267,8 @@ systemctl enable lightdm
 
  
 ```
+
+
 
 ## Configurando o tamanho da resolução do monito
 
