@@ -234,19 +234,22 @@ pacman -S linux-header linux-firmware
 pacman -S terminus-font
 pacman -S dosfstools os-prober mtools network-manager-applet networkmanager 
 pacman -S wpa_supplicant wireless_tools dialog sudo vim base base-devel 
-pacman -S xorg-server xorg-xinit xorg-apps
+pacman -S xorg-server xorg-xinit xorg-apps dmenu
 pacman -S nvidia nvidia-utils nvidia-libgl mesa nvidia-settings vulkan-icd-loader
 pacman -S bluez bluez-utils xdg-utils xdg-user-dirs alsa-utils 
-pacman -S pulseaudio pulseaudio-bluetooth
-pacman -S curl wget git vim
+pacman -S pulseaudio pulseaudio-bluetooth curl wget git vim
 pacman -S i3-wm i3status i3blocks i3lock xfce4-terminal rofi fzf arandr xdotool
-pacman -S wmctrl pcmanfm ranger
-pacman -S dmenu lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
+pacman -S wmctrl pcmanfm ranger thunar
 pacman -S ttf-dejavu ttf-liberation noto-fonts
 pacman -S firefox nitrogen picom lxappearance  
 pacman -S material-gtk-theme papirus-icon-theme
 pacman -S archlinux-wallpaper openconnect oath-toolkit
 
+# rodar o comando, para gerar as pastas do usuario
+xdg-user-dirs-update
+
+# Se quiser instalar o lightdm
+pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
 # Iniciar o i3 com startx
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
