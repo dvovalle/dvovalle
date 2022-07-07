@@ -178,11 +178,13 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym control+0 exec flameshot gui
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
 	position top
+	tray_output primary
 	font pango: Inconsolata 12
         status_command i3status
 	status_command i3blocks
@@ -203,5 +205,6 @@ bar {
 
 exec --no-startup-id  /home/danilo/config-i3/screanlayout.sh
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id nm-applet --sm-disable
 
 
