@@ -5,8 +5,14 @@
 > Teclas de atalho básicas do i3
 - https://elias.praciano.com/2014/08/teclas-de-atalho-do-i3/
 
-
 Resolução do Notebook: 1920x1080 (16:9)
+
+
+## Scripts Download
+
+wget https://static.kalunga.com.br/libs/outros/oss/setup.txt
+
+wget https://static.kalunga.com.br/libs/outros/oss/install.sh
 
 ## Configurando teclado
 
