@@ -1,5 +1,10 @@
 # Arch Linux - Pós Instalação
 
+
+https://github.com/Raymo111/i3lock-color
+sudo pacman -S autoconf cairo fontconfig gcc libev libjpeg-turbo libxinerama libxkbcommon-x11 libxrandr pam pkgconf xcb-util-image xcb-util-xrm
+
+
 ## Install Yay
 
 ```bash
