@@ -6,4 +6,6 @@
 
 # https://raw.githubusercontent.com/awakecoding/FreeRDP-Manuals/master/User/FreeRDP-User-Manual.pdf
 
+
+
 xfreerdp /v:172.16.201.23 /u:"danilo ka" /p:"kalunga07" /d:kalunga.com.br /w:1920 /h:1080 /t:MADESENVNT29 /f +fonts /floatbar
