@@ -3,3 +3,4 @@ BASE32_TOKEN=FWXUXRNPFDG5XLCUSTJ5WTVNMTPM4X3PGCT4ZA6P4VQPPKETPSZGZJMQLWTEJUQEYH3
 TOKEN=`oathtool --base32 --totp $BASE32_TOKEN`
 echo $TOKEN | openconnect --config='/home/danilo/vpn/configvpn.conf'
 
+exit 0
