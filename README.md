@@ -240,3 +240,63 @@ pacman -S oath-toolkit
 git clone https://aur.archlinux.org/vpn-slice-git.git
 
 ```
+
+## Archlinux
+
+### Install pacakge
+
+``` bash
+
+yay -S xrdp xorgxrdp-git xorgxrdp xorgxrdp-glamor
+
+```
+
+### /etc/X11/Xwrapper.config
+
+``` conf
+
+# ...
+
+# Allow anybody to start X:
+allowed_users=anybody
+
+```
+
+### /etc/xrdp/sesman.ini
+
+``` conf
+# ...
+[Xorg]
+param=/usr/lib/Xorg
+# Leave the rest of the lines untouched
+#...
+```
+
+### xinit
+
+``` bash
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+```
+
+### ~/.xinitrc
+
+``` conf
+
+# ...
+
+# !!! Remove several lines from "twm" to "xterm",
+# !!! since we don't need them and they throw error if not removed
+
+# Start Desktop Environment
+exec dbus-launch --exit-with-session
+
+```
+
+### Enable + Restart services
+
+``` bash
+systemctl enable xrdp
+systemctl enable xrdp-sesman
+systemctl restart xrdp
+systemctl restart xrdp-sesman
+```
