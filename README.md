@@ -64,6 +64,27 @@ mount /dev/sda1 /mnt/boot/efi
 swapon /dev/sda4
 ```
 
+## Config IP
+
+> https://wiki.archlinux.org/title/Network_configuration
+
+
+```bash
+
+ip address show
+
+# ADD
+ip address add 172.20.80.84 broadcast + dev enp0s4
+
+ip route add default via 172.20.80.254 dev enp0s4
+
+# DEL
+
+ip address del address/prefix_len dev interface
+ip route del PREFIX via address dev interface
+
+```
+
 ## Instalação
 
 ```bash
