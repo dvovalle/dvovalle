@@ -247,6 +247,8 @@ git clone https://aur.archlinux.org/vpn-slice-git.git
 
 ``` bash
 
+sudo pacman -Sy yay base-devel xorg-xserver-devel
+
 yay -S xrdp xorgxrdp-git xorgxrdp xorgxrdp-glamor
 
 ```
