@@ -1,0 +1,3 @@
+rdesktop -g 1920x1080 -P -z -x l -r sound:off -u "danilo ka" -d kalunga.com.br -p "kalunga07" -k br 172.16.201.23
+
+setxkbmap -model pc105 -layout br -option grp:alt_caps_toggle
