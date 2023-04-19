@@ -1,5 +1,20 @@
 # Instalando Arch Linux
 
+## Como criar pendrive bootavel Linux
+
+Criando a particao do pendrive
+
+- fdisk /dev/sdb
+- remova as particoes existentes
+- crie a particao do tipo gpt
+- mkfs.fat -n DEBIAN -F 32 /dev/sdb1
+- baixa a imagen iso
+- so rodar o comando abaixo para gerara imagem
+
+```bash
+dd if=/home/usuario/Downloads/imagem.iso of=/dev/sdb status=progress && sync
+```
+
 ## Configurando teclado
 
 ```bash
