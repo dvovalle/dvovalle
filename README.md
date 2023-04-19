@@ -12,7 +12,11 @@ Criando a particao do pendrive
 - so rodar o comando abaixo para gerara imagem
 
 ```bash
-dd if=/home/usuario/Downloads/imagem.iso of=/dev/sdb status=progress && sync
+# dd if=/home/usuario/Downloads/imagem.iso of=/dev/sdb status=progress && sync
+Execute o seguinte comando, substituindo /dev/sdx pela sua unidade, por exemplo /dev/sdb. (não anexe um número de partição, de forma a não usar algo como /dev/sdb1)
+
+dd bs=4M if=path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync
+
 ```
 
 ## Configurando teclado
