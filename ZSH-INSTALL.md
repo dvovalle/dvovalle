@@ -53,6 +53,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 # REBOOT!!!!!!!!!!!!!!!!!!!!!
 
+source ~/.zshrc
 
 # Configurar conforme desejar
 p10k configure
