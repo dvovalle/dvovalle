@@ -48,4 +48,8 @@ fc-cache -vf
 
 # REBOOT!!!!!!!!!!!!!!!!!!!!!
 
+
+# Configurar conforme desejar
+p10k configure
+
 ```
