@@ -13,6 +13,8 @@ sudo apt install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm li
 
 sudo apt install fonts-noto-core fonts-noto-mono fonts-noto-extra fonts-noto-ui-core fonts-noto-color-emoji fonts-symbola fonts-noto-color-emoji
 
+sudo apt install powerline fonts-powerline
+
 # Instalar e configurar ZSH
 sudo apt install zsh
 chsh -s /bin/zsh
