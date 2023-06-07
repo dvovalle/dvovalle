@@ -48,6 +48,9 @@ sudo apt-get install fonts-powerline
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git ~/.fonts/ubuntu-mono-powerline-ttf
 fc-cache -vf
 
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
 # REBOOT!!!!!!!!!!!!!!!!!!!!!
 
 
