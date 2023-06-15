@@ -1,0 +1,4 @@
+https://upcloud.com/resources/tutorials/troubleshoot-network-connectivity-linux-server
+
+
+sudo resolvconf -u
