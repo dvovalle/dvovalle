@@ -2,7 +2,7 @@
 
 # ############################################## #
 #   Desenvolvido por: Danilo Valle de Oliveira   #
-#   SO: Debian 11                                #
+#   SO: Debian 12                                #
 # ############################################## #
 
 # Var: Comandos
