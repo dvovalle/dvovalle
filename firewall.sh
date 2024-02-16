@@ -289,16 +289,12 @@ func_OUTPUTCHAIN_ALLOW() {
   $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 465 -m comment --comment "SMTPS" -j ACCEPT
   $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 587 -m comment --comment "SMTPS" -j ACCEPT
   $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 993 -m comment --comment "IMAPS" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 8001 -m comment --comment "IRC" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 1433 -m comment --comment "SQL Server" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 3306 -m comment --comment "MySql Server" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 5432 -m comment --comment "PostGreSQL" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 25432 -m comment --comment "PostGreSQL" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 9200 -m comment --comment "Elastic 1" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 9201 -m comment --comment "Elastic 2" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 9202 -m comment --comment "Elastic 3" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 26379 -m comment --comment "RedisSentinel" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 6379 -m comment --comment "Redis" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 1433 -m comment --comment "SQL Server" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 3306 -m comment --comment "MySql Server" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 5432 -m comment --comment "PostGreSQL" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 25432 -m comment --comment "PostGreSQL" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 26379 -m comment --comment "RedisSentinel" -j ACCEPT
+  $CMD_IPTABLES_V4 -A OUTPUT -p tcp -m tcp --dport 6379 -m comment --comment "Redis" -j ACCEPT
 }
 
 func_NTPCHAIN_ALLOW() {
@@ -309,36 +305,18 @@ func_NTPCHAIN_ALLOW() {
 
   vPortasAltas="3000:65400"
 
-
-  # $CMD_IPTABLES_V4 -A INPUT -p tcp -m tcp --dport 80 -m comment --comment "80" -j ACCEPT
-  # $CMD_IPTABLES_V4 -A INPUT -p tcp -m tcp --dport 443 -m comment --comment "443" -j ACCEPT  
-
-
   for z in $vIP_RANGE_MATRIZ $vIP_RANGE_VPN $v_IP_LAN_MATRIZ_Dev
   do
-    # $CMD_IPTABLES_V4 -A INPUT -s $z -p tcp -m tcp --dport 22 -m comment --comment "22" -j ACCEPT
-    # $CMD_IPTABLES_V4 -A INPUT -s $z -p tcp -m tcp --dport 80 -m comment --comment "80" -j ACCEPT
-    # $CMD_IPTABLES_V4 -A INPUT -s $z -p tcp -m tcp --dport 443 -m comment --comment "443" -j ACCEPT
     $CMD_IPTABLES_V4 -A OUTPUT -s $z -p tcp -m tcp --dport $vPortasAltas -m comment --comment "XRDP" -j ACCEPT
     $CMD_IPTABLES_V4 -A OUTPUT -s $z -p udp -m udp --dport $vPortasAltas -m comment --comment "Kalunga" -j ACCEPT
   done    
 
-  $CMD_IPTABLES_V6 -A OUTPUT -p tcp -m tcp --dport $vPortasAltas -m comment --comment "Kalunga" -j ACCEPT
-  $CMD_IPTABLES_V6 -A OUTPUT -p udp -m udp --dport $vPortasAltas -m comment --comment "Kalunga" -j ACCEPT
-  $CMD_IPTABLES_V6 -A FORWARD --protocol tcp --sport $vPortasAltas -j ACCEPT
-  $CMD_IPTABLES_V6 -A FORWARD --protocol udp --sport $vPortasAltas -j ACCEPT
-  $CMD_IPTABLES_V4 -A FORWARD --protocol tcp --sport $vPortasAltas -j ACCEPT  
-  $CMD_IPTABLES_V4 -A FORWARD --protocol udp --sport $vPortasAltas -j ACCEPT  
-}
-
-func_LOGS() {
-    echo -e "\033[34m LOGS   **************************************** [OK] \033[m ";   
-    $CMD_IPTABLES_V4 -N LOGGING
-    $CMD_IPTABLES_V4 -A OUTPUT -j LOGGING
-    $CMD_IPTABLES_V4 -A INPUT -j LOGGING
-    $CMD_IPTABLES_V4 -A LOGGING -m limit --limit 2/min -j LOG --log-prefix "IPTables-Dropped: " --log-level 4
-    $CMD_IPTABLES_V4 -A LOGGING -j DROP  
-
+  # $CMD_IPTABLES_V6 -A OUTPUT -p tcp -m tcp --dport $vPortasAltas -m comment --comment "Kalunga" -j ACCEPT
+  # $CMD_IPTABLES_V6 -A OUTPUT -p udp -m udp --dport $vPortasAltas -m comment --comment "Kalunga" -j ACCEPT
+  # $CMD_IPTABLES_V6 -A FORWARD --protocol tcp --sport $vPortasAltas -j ACCEPT
+  # $CMD_IPTABLES_V6 -A FORWARD --protocol udp --sport $vPortasAltas -j ACCEPT
+  # $CMD_IPTABLES_V4 -A FORWARD --protocol tcp --sport $vPortasAltas -j ACCEPT  
+  # $CMD_IPTABLES_V4 -A FORWARD --protocol udp --sport $vPortasAltas -j ACCEPT  
 }
 
 func_SAVEALL() {
@@ -367,7 +345,11 @@ case $1 in
     func_NTPCHAIN_ALLOW  
     func_OUTPUTCHAIN_ALLOW
     func_HOST_PING
+    func_HOST_FTP
     func_INVALID_INPUT_DROP
+    func_PCT_FRAGMENTADOS
+    func_IPSPOOFING
+    func_SmurfProtection
     func_ATIVA_LOG    
     func_SAVEALL
 
