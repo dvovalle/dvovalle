@@ -10,9 +10,9 @@ VPN_USER="daniloka"
 VPN_PASSWORD="kalunga15"
 VPN_SEQUENCE="\n${VPN_USER}\n${VPN_PASSWORD}\n${VPN_TOKEN}"
 
-FILE_RC='/home/danilo/.bashrc'
-FILE_RC_ROOT='/root/.bashrc'
-FILE_CONFIGVPN='/home/danilo/GitHub/dvovalle/vpn/configvpn.conf'
+FILE_RC='/Users/danilovalle/.zshrc'
+FILE_RC_ROOT='/root/.zshrc'
+FILE_CONFIGVPN='/Users/danilovalle/GitHub/dvovalle/vpn_mac/configvpn.conf'
 
 
 sed -i "s/user=.*/user=$VPN_USER/" $FILE_CONFIGVPN
