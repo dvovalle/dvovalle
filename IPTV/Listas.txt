@@ -1,0 +1,5 @@
+8c:ea:48:da:54:5a
+
+https://raw.githubusercontent.com/SaTecnologiacell/satecnologia.iptv-canais/main/iptvlista.m3u
+
+   ├  Servidor  http://4tv.site ├  Usuário  alexsandro22240 ├  Senha  11982022240 ├  Vencimento  12/03/2024 ├  Conexões Máximas  1 ├  Conexões Ativas  0  ─  Link M3U: http://4tv.site/get.php?username=alexsandro22240&password=11982022240&type=m3u_plus ├  Servidor  http://4tv.site ├  Usuário  valterversa0103 ├  Senha  versavalter0103 ├  Vencimento  09/03/2024 ├  Conexões Máximas  1 ├  Conexões Ativas  1  ─  Link M3U: http://4tv.site/get.php?username=valterversa0103&password=versavalter0103&type=m3u_plus
